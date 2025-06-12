@@ -49,7 +49,7 @@ function OrgChart({ nodes, onNodeDragStart, onNodeDrag, onNodeDragEnd, draggingI
             fill="#38bdf8"
             stroke="#0ea5e9"
             strokeWidth={2}
-            style={{ pointerEvents: 'auto', opacity: hoveredId === node.id ? 1 : 0.4, transition: 'opacity 0.2s' }}
+            style={{ pointerEvents: 'move', opacity: hoveredId === node.id ? 1 : 0.4, transition: 'opacity 0.3s' }}
             onClick={() => onConnectionPointClick && onConnectionPointClick(node.id, 'bottom', node.x, node.y + CARD_HEIGHT + 18)}
             onMouseEnter={() => setHoveredId(node.id)}
             onMouseLeave={() => setHoveredId(null)}
