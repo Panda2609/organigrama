@@ -1,0 +1,12 @@
+.connection-point {
+  transition: r 0.2s, opacity 0.2s;
+  opacity: 0;
+}
+.connection-point.visible {
+  opacity: 1;
+  r: 8;
+}
+.connection-point.hidden {
+  opacity: 0;
+  r: 0;
+}

@@ -142,6 +142,12 @@ function Canvas() {
     setNodes(nodes => nodes.map(n => n.id === id ? { ...n, ...data } : n));
   };
 
+  // Callback para click en punto de conexión
+  const handleConnectionPointClick = (nodeId, position, x, y) => {
+    console.log('Punto de conexión clickeado:', { nodeId, position, x, y });
+    // Aquí puedes iniciar la lógica de conexión visual
+  };
+
   return (
     // Renderiza el canvas con la cuadrícula y las herramientas
     <div
@@ -186,6 +192,7 @@ function Canvas() {
             onNodeDragEnd={handleNodeDragEnd}
             draggingId={draggingId}
             onEditNode={handleEditNode}
+            onConnectionPointClick={handleConnectionPointClick}
           />
         </g>
       </svg>
