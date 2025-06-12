@@ -1,8 +1,5 @@
-.canvas-container{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    background-color: red;
-    color: red;
+.canvas-container {
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
 }

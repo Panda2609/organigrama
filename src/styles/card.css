@@ -1,0 +1,80 @@
+/* Modern card styles */
+.cardContainer {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px 0 rgba(30, 41, 59, 0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2em 0em; /* Espaciado vertical uniforme entre los elementos internos */
+  /* position: relative; */
+  transition: box-shadow 0.25s, transform 0.18s;
+  border: 1.5px solid #f1f5f9;
+  overflow: visible;
+}
+.cardContainer:hover {
+  box-shadow: 0 12px 40px 0 rgba(30, 41, 59, 0.18), 0 3px 12px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.025);
+  border-radius: 20px;
+}
+.buttonPanel {
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    width: 100%;
+}
+.cardImage, .cardRole, .buttonPanel {
+  width: 100%;
+  box-sizing: border-box;
+}
+.cardImage {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cardAvatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 3px solid #e0e7ff;
+  box-shadow: 0 2px 12px rgba(59,130,246,0.10);
+  background: #f1f5f9;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.cardAvatarPlaceholder svg {
+  display: block;
+  width: 84px;
+  height: 84px;
+}
+.cardRole {
+  text-align: center;
+  margin: 0;
+}
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.01em;
+}
+.cardSubtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+h3,p {
+  margin: 0.5em 0em;
+}
